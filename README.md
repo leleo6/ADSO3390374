@@ -16,6 +16,8 @@
 | 03. | CSS | Look & Feel - Cascading Style Sheet |
 | 03. | Javascript | Behavior - Programing Language |
 
+[profile](/src/imgs/yo.jpeg)
+
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
 [VERCEL URL](https://vercel.com/)
