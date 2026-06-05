@@ -14,9 +14,9 @@
 | 01. | Emmet | Workflow - Markup & Styling |
 | 02. | HTML | Structure - Hypertext Markup Language |
 | 03. | CSS | Look & Feel - Cascading Style Sheet |
-| 03. | Javascript | Behavior - Programing Language |
+| 04. | Javascript | Behavior - Programing Language |
 
-[profile](/src/imgs/yo.jpeg)
+![profile](src/imgs/yo.jpeg)
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>01-Emmet</title>
+</head>
+<body class="emmet">
+    <a href="../index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H48V120l80-80,80,80Z"></path></svg>
+    </a>
+    <main>
+        <header>
+            <h1>01-Emmet</h1>
+            <img src="../src/imgs/logo-emmet.svg" alt="Emmet">
+            <h4>Plugin for faster HTML and CSS coding</h4>
+        </header>
+        <section>
+            <h2>01-Child<em> > </em></h2>
+            <p>Creates child elements (nesting)</p>
+            <h4>Example:</h4>
+            <p>ul>li>a</p>
+            <h4>Result:</h4>
+<xmp>
+<ul>
+    <li><a href=""></a></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>02-Sibling<em> + </em></h2>
+            <p>Creates sibling elements (at the same level)</p>
+            <h4>Example:</h4>
+            <p>section+header+nav</p>
+            <h4>Result:</h4>
+<xmp>
+<section></section>
+<header></header>
+<nav></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>03-Repeat<em> * </em></h2>
+            <p>Repeats or multiplies elements</p>
+            <h4>Example:</h4>
+            <p>ul>li*3</p>
+            <h4>Result:</h4>
+<xmp>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>04-Class Attribute<em style="padding-bottom: 1.4rem;"> . </em></h2>
+            <p>Creates an element with a class name</p>
+            <h4>Example:</h4>
+            <p>div.contenedor</p>
+            <h4>Result:</h4>
+<xmp>
+<div class="contenedor"></div>
+</xmp>
+        </section>
+        <section>
+            <h2>05-Multiple Classes<em style="padding-bottom: 1.4rem;">.. </em></h2>
+            <p>Creates an element with multiple classes</p>
+            <h4>Example:</h4>
+            <p>div.clase1.clase2.clasen</p>
+            <h4>Result:</h4>
+<xmp>
+<div class="clase1 clase2 clasen"></div>
+</xmp>
+        </section>
+        <section>
+            <h2>06-ID Attribute<em style="font-size: 1.6rem;"> # </em></h2>
+            <p>Creates an element with an ID name</p>
+            <h4>Example:</h4>
+            <p>nav#menu</p>
+            <h4>Result:</h4>
+<xmp>
+<nav id="menu"></nav>
+</xmp>
+        </section>
+        <section>
+            <h2>07-Add Text<em style="font-size: 1.6rem;" > {} </em></h2>
+            <p>Adds text content inside an element</p>
+            <h4>Example:</h4>
+            <p>div{Lorem Ipsum Dolor}</p>
+            <p>a{Click Aquí}</p>
+            <h4>Result:</h4>
+<xmp>
+<div>Lorem Ipsum Dolor</div>
+<a href="">Click Aquí</a>
+</xmp>
+        </section>
+        <section>
+            <h2>08-Custom Attributes<em style="font-size: 1.6rem;"> [] </em></h2>
+            <p>Defines custom attributes for an element</p>
+            <h4>Example:</h4>
+            <p>a[href=www.google.com]</p>
+            <h4>Result:</h4>
+<xmp>
+<a href="www.google.com"></a>
+</xmp>
+        </section>
+        <section>
+            <h2>09-Item Numbering<em style="font-size: 1.6rem;" > $ </em></h2>
+            <p>Generates consecutive numbering for class names, IDs, or content</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$*3</p>
+            <h4>Result:</h4>
+<xmp>
+<ul>
+    <li class="num1"></li>
+    <li class="num2"></li>
+    <li class="num3"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>10-Item Numbering Direction<em style="font-size: 1.6rem;"> @- </em></h2>
+            <p>Changes the direction of consecutive numbering (descending)</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$@-*3</p>
+            <h4>Result:</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num2"></li>
+    <li class="num1"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>11-Item Numbering Base<em style="font-size: 1.6rem;"> @n </em></h2>
+            <p>Defines the starting base number for consecutive numbering</p>
+            <h4>Example:</h4>
+            <p>ul>li.num$@3*4</p>
+            <h4>Result:</h4>
+<xmp>
+<ul>
+    <li class="num3"></li>
+    <li class="num4"></li>
+    <li class="num5"></li>
+    <li class="num6"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2>12-Climb-up<em style="font-size: 1.6rem;"> ^ </em></h2>
+            <p>Climbs up one level in the element tree hierarchy</p>
+            <h4>Example:</h4>
+            <p>section>article>div^p</p>
+            <h4>Result:</h4>
+<xmp>
+<section>
+    <article>
+        <div></div>
+    </article>
+    <p></p>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>13-Grouping<em style="font-size: 1.6rem;"> ( ) </em></h2>
+            <p>Groups elements to define complex markup structures</p>
+            <h4>Example:</h4>
+            <p>(header>nav)(section>article)</p>
+            <h4>Result:</h4>
+<xmp>
+<header>
+    <nav></nav>
+</header>
+<section>
+    <article></article>
+</section>
+</xmp>
+        </section>
+        <section>
+            <h2>14-Lorem Ipsum<em style="font-size: 0.7rem;"> lorem </em></h2>
+            <p>Generates placeholder "Lorem Ipsum" text</p>
+            <h4>Example:</h4>
+            <p>lorem</p>
+            <p>lorem20</p>
+            <p>lorem*5</p>
+        </section>
+        <section>
+            <h2>15-Documents HTML<em style="font-size: 0.7rem;"> html: </em></h2>
+            <p>Generates complete HTML document structures</p>
+            <h4>Example:</h4>
+            <p>html:xs — Documento xhtml 1.0 Strict</p>
+            <p>html:xt — Documento xhtml 1.0 Transitional</p>
+            <p>html:4s — Documento html 4.01 Strict</p>
+            <p>html:4t — Documento html 4.01 Transitional</p>
+            <p>html:5 — Documento html 5</p>
+        </section>
+        <section>
+            <h2>16-Meta TAGS<em style="font-size: 0.7rem;"> meta: </em></h2>
+            <p>Generates meta tags quickly</p>
+            <h4>Example:</h4>
+            <p>meta:vp — &lt;meta name="viewport" content="width=device-width..."&gt;</p>
+        </section>
+    </main>
+</body>
+</html>
