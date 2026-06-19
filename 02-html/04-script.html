@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-script</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+<body class="html">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,144a64.07,64.07,0,0,1-64,64H80a8,8,0,0,1,0-16h88a48,48,0,0,0,0-96H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,45.66L51.31,80H168A64.07,64.07,0,0,1,232,144Z"></path></svg>   </a>
+    <main>
+        <header class="mainmenu">
+            <h1>04-Script</h1>
+            <h4>Inserts JavaScript code.</h4>
+        </header>
+        <section>
+            <h3>Welcome: <small class="user">Guest</small></h3>
+        </section>
+    </main>
+    <script>
+        const user = document.querySelector('.user')
+        let username = prompt("What's your name?")
+        if(username){
+            user.textContent = username + ' 😊'
+        } else {
+            user.textContent = 'Guest 🙄'
+        }
+    </script>
+</body>
+</html>
