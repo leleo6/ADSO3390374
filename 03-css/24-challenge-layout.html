@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío Layout - CSS Sprites</title>
+    <title>24-Challenge Layout</title>
     <link rel="stylesheet" href="../css/master.css">
     <style>
         .imagen-sprite {
@@ -19,7 +19,7 @@
             text-align: center;
         }
 
-        footer .banner-inferior {
+        footer .imagen-footer {
             background-position: -465px -418px;
             height: 182px;
             margin: 0 auto 1.5rem;
@@ -49,7 +49,7 @@
             color: #107537;
         }
 
-        .seccion-filas {
+        .seccion-sprites {
             background-color: #09692e;
             display: flex;
             flex-direction: column;
@@ -59,7 +59,7 @@
             padding: 0.6rem;
         }
 
-        .seccion-filas .fila-elemento {
+        .seccion-sprites .fila-contenedor {
             align-items: center;
             background-color: #fff;
             display: flex;
@@ -67,14 +67,14 @@
             padding: 1.5rem 2rem;
         }
 
-        .seccion-filas .fila-elemento .caja-icono {
+        .seccion-sprites .fila-contenedor .icono-sprite {
             background-position: -299px -493px;
             flex-shrink: 0;
             height: 95px;
             width: 86px;
         }
 
-        .seccion-filas .fila-elemento p {
+        .seccion-sprites .fila-contenedor p {
             color: #333;
             flex: 1;
             line-height: 1.7;
@@ -83,18 +83,18 @@
             transition: color 0.3s ease;
         }
 
-        .seccion-filas .fila-elemento:hover p {
+        .seccion-sprites .fila-contenedor:hover p {
             color: #1e7d3c;
         }
 
-        .seccion-filas .fila-elemento .caja-lata {
+        .seccion-sprites .fila-contenedor .lata-sprite {
             background-position: -95px -213px;
             flex-shrink: 0;
             height: 157px;
             width: 90px;
         }
 
-        .seccion-galeria {
+        .contenedor-portafolio {
             background-color: #09692e;
             display: flex;
             gap: 1.3rem;
@@ -103,7 +103,7 @@
             padding: 1.3rem;
         }
 
-        .seccion-galeria .tarjeta-galeria {
+        .contenedor-portafolio .tarjeta-galeria {
             border: 2px solid #fff;
             flex: 1;
             height: 222px;
@@ -111,24 +111,24 @@
             position: relative;
         }
 
-        .seccion-galeria .tarjeta-galeria .imagen-sprite {
+        .contenedor-portafolio .tarjeta-galeria .imagen-sprite {
             height: 100%;
             width: 100%;
         }
 
-        .seccion-galeria .tarjeta-galeria:nth-child(1) .imagen-sprite {
+        .contenedor-portafolio .tarjeta-galeria:nth-child(1) .imagen-sprite {
             background-position: -465px 0;
         }
 
-        .seccion-galeria .tarjeta-galeria:nth-child(2) .imagen-sprite {
+        .contenedor-portafolio .tarjeta-galeria:nth-child(2) .imagen-sprite {
             background-position: -465px -205px;
         }
 
-        .seccion-galeria .tarjeta-galeria:nth-child(3) .imagen-sprite {
-            background-position: -465px -418px;
+        .contenedor-portafolio .tarjeta-galeria:nth-child(3) .imagen-sprite {
+            background-position: -465px 0;
         }
 
-        .seccion-galeria .tarjeta-galeria h3 {
+        .contenedor-portafolio .tarjeta-galeria h3 {
             background-color: rgba(255, 255, 255, 0.212);
             color: #000;
             left: 0;
@@ -141,7 +141,7 @@
             width: 100%;
         }
 
-        .seccion-galeria .tarjeta-galeria:hover h3 {
+        .contenedor-portafolio .tarjeta-galeria:hover h3 {
             background-color: rgba(255, 255, 255, 0.856);
         }
 
@@ -150,7 +150,7 @@
             text-align: center;
         }
 
-        header .logo-marca {
+        header .logo-principal {
             background-position: -12px -400px;
             height: 180px;
             margin: 0 auto 2rem;
@@ -199,65 +199,65 @@
     </a>
 
     <header>
-        <div class="logo-marca imagen-sprite"></div>
+        <div class="logo-principal imagen-sprite"></div>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
-            <a href="#">Proyectos</a>
+            <a href="#">Portafolio</a>
             <a href="#">Servicios</a>
             <a href="#">Contacto</a>
         </nav>
     </header>
 
-    <section class="seccion-galeria">
+    <section class="contenedor-portafolio">
         <div class="tarjeta-galeria">
-            <h3>Diseño 01</h3>
+            <h3>Sprite 01</h3>
             <div class="imagen-sprite"></div>
         </div>
         <div class="tarjeta-galeria">
-            <h3>Diseño 02</h3>
+            <h3>Sprite 02</h3>
             <div class="imagen-sprite"></div>
         </div>
         <div class="tarjeta-galeria">
-            <h3>Diseño 03</h3>
+            <h3>Sprite 03</h3>
             <div class="imagen-sprite"></div>
         </div>
     </section>
 
-    <section class="seccion-filas">
-        <div class="fila-elemento">
-            <div class="caja-icono imagen-sprite"></div>
-            <p>El desarrollo web moderno requiere el uso eficiente de recursos visuales. La técnica de CSS Sprites permite consolidar múltiples imágenes en un solo archivo para optimizar el rendimiento y acelerar la carga de la página.</p>
-            <div class="caja-lata imagen-sprite"></div>
+    <section class="seccion-sprites">
+        <div class="fila-contenedor">
+            <div class="icono-sprite imagen-sprite"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, laboriosam cumque sit vero praesentium id tempore, quibusdam asperiores eius quaerat expedita repudiandae sequi deleniti labore quis animi. Reprehenderit, ut! Sit!</p>
+            <div class="lata-sprite imagen-sprite"></div>
         </div>
-        <div class="fila-elemento">
-            <div class="caja-icono imagen-sprite"></div>
-            <p>Implementar maquetaciones adaptables con CSS Flexbox facilita la distribución y alineación de los elementos en el documento, logrando diseños limpios y con excelente experiencia de usuario.</p>
-            <div class="caja-lata imagen-sprite"></div>
+        <div class="fila-contenedor">
+            <div class="icono-sprite imagen-sprite"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eum earum! Quam, odio? Voluptate qui quam, iusto rerum eaque placeat quaerat molestiae veritatis alias dicta facere doloremque quia, quasi ipsam?</p>
+            <div class="lata-sprite imagen-sprite"></div>
         </div>
-        <div class="fila-elemento">
-            <div class="caja-icono imagen-sprite"></div>
-            <p>La combinación de propiedades como background-position y flexbox brinda la versatilidad necesaria para construir interfaces atractivas sin saturar el servidor con múltiples peticiones HTTP adicionales.</p>
-            <div class="caja-lata imagen-sprite"></div>
+        <div class="fila-contenedor">
+            <div class="icono-sprite imagen-sprite"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa fuga sed velit in dicta. Dolores, ullam debitis illum ipsam minus, doloremque obcaecati adipisci, quia sunt maxime sequi? Aut, eaque?</p>
+            <div class="lata-sprite imagen-sprite"></div>
         </div>
-        <div class="fila-elemento">
-            <div class="caja-icono imagen-sprite"></div>
-            <p>Utilizar buenas prácticas de maquetación y hojas de estilo estructuradas garantiza un mantenimiento sencillo y código limpio, cumpliendo con los estándares actuales del desarrollo frontend.</p>
-            <div class="caja-lata imagen-sprite"></div>
+        <div class="fila-contenedor">
+            <div class="icono-sprite imagen-sprite"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo ducimus labore pariatur quos eos dicta excepturi perspiciatis eius incidunt debitis architecto id neque eum voluptatum, obcaecati quasi ut. Itaque, sunt? </p>
+            <div class="lata-sprite imagen-sprite"></div>
         </div>
-        <div class="fila-elemento">
-            <div class="caja-icono imagen-sprite"></div>
-            <p>Cada sección del layout responde de forma intuitiva, permitiendo que la navegación e interacción visual mantengan su fluidez y armonía en cualquier resolución o pantalla donde se renderice.</p>
-            <div class="caja-lata imagen-sprite"></div>
+        <div class="fila-contenedor">
+            <div class="icono-sprite imagen-sprite"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea temporibus maxime placeat amet vitae voluptatum commodi pariatur animi, quos praesentium consequuntur error labore! Totam voluptatum natus expedita vero laborum voluptates?</p>
+            <div class="lata-sprite imagen-sprite"></div>
         </div>
     </section>
 
     <footer>
-        <div class="banner-inferior imagen-sprite"></div>
+        <div class="imagen-footer imagen-sprite"></div>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
-            <a href="#">Proyectos</a>
+            <a href="#">Portafolio</a>
             <a href="#">Servicios</a>
             <a href="#">Contacto</a>
         </nav>
