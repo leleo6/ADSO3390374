@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css">
+    <title>01</title>
+    <style>
+        section {
+            div {
+                border: 2px solid floralwhite;
+                height: 300px;
+                width: 314;
+                margin: auto;
+                background-color: blueviolet;
+                &.bradius1 { border-radius: 50%;}
+                &.bradius2 { border-radius: 40% 0;}
+                &.bradius3 { border-radius: 140px 0 0 140px;}
+                &.bradius4 { border-radius: 140px 0 140px 140px;}
+                &.bradius5 {
+                    border-radius: 40px;
+                    corner-shape: squircle;
+                }
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <main>
+        <header class="mainmenu">
+        </header>
+        <section>
+            <h3>border-radius: 50%</h3>
+            <div class="bradius1"></div>
+            <h3>border-radius: 40px 0</h3>
+            <div class="bradius2"></div>
+            <h3>border-radius: 140px 0 0 140px</h3>
+            <div class="bradius3"></div>
+            <h3>border-radius: 140px 0 140px 140px</h3>
+            <div class="bradius4"></div>
+            <div class="bradius5"></div>
+        </section>
+    </main>
+</body>
+</html>
