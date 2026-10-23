@@ -8,34 +8,41 @@
     <link rel="stylesheet" href="../css/master.css">
     <style>
         img.filter {
-            display: flex;
-            margin-inline: auto;
-            width: 320px;
-            transition: all 0.6s ease-in;
-        }
+            width: 140px;
+            display: block;
+            margin: 1rem auto;
+            outline: 2px solid white;
+            border-radius: 14px;
+            corner-shape: squircle;
+            background: linear-gradient(45deg,red,blue );
+            transition: all 0.2s ease-in;
 
-        img.filter:hover {
-            filter: none;
-        }
+            &.filter1{
+                filter: grayscale(.8);
+            }
+            &.filter2{
+                filter: blur(20px);
+            }
+            &.filter3{
+                filter: Sepia(1);
+            }
+            &.filter4{
+                filter: Brightness(.8);
+            }
+            &.filter5{
+                filter: Invert(1);
+            }
+            &.filter6{
+                filter: drop-shadow(0 0 12px white);
+            }
+            &.filter7{
+                filter: hue-rotate(200deg);
+            }
 
-        img.filter1 {
-            filter: grayscale(1);
-        }
+            &:hover{
+                filter: none;
+            }
 
-        img.filter2 {
-            filter: blur(6px);
-        }
-
-        img.filter3 {
-            filter: sepia(1);
-        }
-
-        img.filter4 {
-            filter: brightness(2);
-        }
-
-        img.filter5 {
-            filter: invert(1);
         }
     </style>
 </head>
@@ -51,19 +58,24 @@
     <main>
         <header class="mainmenu">
             <h1>31 - Filters</h1>
-            <h3>Property (filter) applying graphical transformations (e.g., blur(), grayscale(), contrast(), drop-shadow()) to elements before display.</h3>
+            <h3>Property (filter) applying graphical transformations (e.g., blur(), grayscale(), contrast(),
+                drop-shadow()) to elements before display.</h3>
         </header>
         <section>
             <h4>GrayScale</h4>
-            <img class="filter filter1" src="imgs/inosuke.png" alt="Inosuke Grayscale">
+            <img class="filter filter1" src="imgs/inosuke.png" alt="Inosuke">
             <h4>Blur</h4>
-            <img class="filter filter2" src="imgs/inosuke.png" alt="Inosuke Blur">
+            <img class="filter filter2" src="imgs/inosuke.png" alt="Inosuke">
             <h4>Sepia</h4>
-            <img class="filter filter3" src="imgs/inosuke.png" alt="Inosuke Sepia">
+            <img class="filter filter3" src="imgs/inosuke.png" alt="Inosuke">
             <h4>Brightness</h4>
-            <img class="filter filter4" src="imgs/inosuke.png" alt="Inosuke Brightness">
+            <img class="filter filter4" src="imgs/inosuke.png" alt="Inosuke">
             <h4>Invert</h4>
-            <img class="filter filter5" src="imgs/inosuke.png" alt="Inosuke Invert">
+            <img class="filter filter5" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>Drop Shadow</h4>
+            <img class="filter filter6" src="imgs/inosuke.png" alt="Inosuke">
+            <h4>HUE Rotate</h4>
+            <img class="filter filter7" src="imgs/inosuke.png" alt="Inosuke">
         </section>
     </main>
 </body>
