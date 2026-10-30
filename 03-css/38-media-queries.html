@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css">
+    <title>38-media Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+
+        * {
+            transition: all 0.5s ease;
+        }
+
+        body {
+            background-color: #013571;
+            color: white;
+            font-family: Poppins, sans-serif;
+            padding: 1rem;
+            width: 1200px;
+
+            main {
+                border: 10px solid white;
+                padding: 1rem;
+                margin: 0 auto;
+                width: 1228px;
+
+                header {
+                    figure.logo {
+                        background: url(imgs/dragon.jpg);
+                        display: block;
+                        margin: 0 auto;
+                        height: 354px;
+                        width: 919px;
+                    }
+
+                    menu {
+                        padding: 0;
+
+                        a:is(:link :visited) {
+                            border: 2px solid white;
+                            color: #013571;
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 0.8rem 1rem;
+                            display: inline-block;
+                            width: 210px;
+                            transition: all 0.5s ease;
+
+                            &:hover {
+                                transform: translateY(-8px) scale(1.02);
+                            }
+
+                        }
+                    }
+                }
+
+                section {
+                    h2 {
+                        text-align: center;
+                        font-size: 2.8rem;
+                        font-weight: 400;
+                    }
+                    h2:ntn-of-type(2) {display: none;}
+                    h2:last-of-type {
+                        display: none;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        text-align: justify;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+        }
+
+
+
+        @media (max-width: 800px) {
+            body {
+                main {
+                    width: 380px;
+
+                    header {
+                        figure.logo {
+                            background: url() no-repeat center;
+                            height: 156px;
+                            width: 162px;
+
+                        }
+                        menu{
+                            a:is(:link, :visited){
+                                width: 350px;
+                                display: block;
+                                margin-bottom: 0.2rem;
+                            }
+                        }
+                    }
+                    section {
+                        h2:first-of-type { display:none ;}
+                        h2:nth-of-type(2) {display: block;}
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body class="css">
+    <main>
+        <header class="mainmenu">
+            <menu>
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">services</a>
+                <a href="">products</a>
+                <a href="">contact</a>
+            </menu>
+        </header>
+        <section>
+            <h2>Desktop: (> 1280px)</h2>
+            <h2>Tablet: (> 800px < 1280) </h2>
+                    <h2>movile: ( < 800px)</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rerum cum vel optio
+                                molestiae, debitis consectetur commodi magnam at est mollitia. Dolores, quos commodi at
+                                dicta ipsum similique necessitatibus sit unde est voluptatum maiores facilis animi aut
+                                ipsa nemo itaque vitae omnis esse. Accusamus eligendi hic optio, quasi, minima excepturi
+                                in rerum iure aut tenetur ipsam consequatur veritatis molestias quod expedita odit
+                                deserunt voluptatem dignissimos unde voluptate. Enim totam magni numquam perspiciatis
+                                sint dignissimos error beatae nisi accusamus repellendus ut quasi atque, rem, nulla
+                                natus similique provident explicabo voluptate, reprehenderit laborum! Consequatur sint
+                                veniam, quisquam sapiente voluptatibus quibusdam cumque quo laudantium doloremque neque
+                                provident, laboriosam ad a. Mollitia repellendus alias officia animi, at assumenda
+                                consequuntur dolorum adipisci maxime voluptatibus. Beatae.
+                            </p>
+        </section>
+    </main>
+</body>
+
+</html>

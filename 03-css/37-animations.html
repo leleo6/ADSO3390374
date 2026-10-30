@@ -9,12 +9,11 @@
     <style>
         section {
             div.jungle {
-                background: url(imgs/jungle.png) no-repeat center /contain;
-                border-radius: 4px;
-                margin-block: 0rem;
+                background: url(imgs/jungle.png)no-repeat center /contain;
+                margin: auto;
                 position: relative;
                 overflow: hidden;
-                height: 400px;
+                height: 390px;
                 width: 320px;
 
                 img {
@@ -24,22 +23,18 @@
                 }
 
                 img.logo {
-                    top: 10px;
-                    left: 10px;
-                    height: 72px;
-                    object-fit: contain;
-                    z-index: 9;
-                    width: 300px;
-                    animation: 2s animLogo ease-in infinite;
+                    position: absolute;
+                    transform: scale(.5);
+                    animation: 2.8s animLogo ease-in infinite;
+                    top: 20px;
                 }
 
                 img.dk {
-                    top: 140px;
-                    left: 100px;
                     width: 140px;
-                    object-fit: contain;
-                    z-index: 8;
-                    animation: 2s animDK ease-out infinite;
+                    position: absolute;
+                    left: 90px;
+                    top: 140px;
+                    animation: 2s animdk ease infinite;
                 }
 
                 div.move {
@@ -62,38 +57,33 @@
 
             0%,
             100% {
-                transform: scale(.8)
+                transform: scale(.7);
             }
 
-            50% {
-                transform: scale(1)
+            to {
+                transform: scale(1);
             }
         }
 
-        @keyframes animDK {
+        @keyframes animdk {
             0% {
-                top: 140px;
-                transform: rotateX(0deg);
-            }
-
-            40% {
-                top: 70px;
-                transform: rotateX(0deg);
+                transform: translateY(-80px) rotateX(0deg);
             }
 
             50% {
-                top: 70px;
-                transform: rotateX(360deg);
+                transform: translateY(-80px) rotateX(0deg);
             }
 
-            60% {
-                top: 70px;
-                transform: rotateX(360deg);
+            55% {
+                transform: translateY(-80px) rotateX(180deg);
+            }
+
+            65% {
+                transform: translateY(-80px) rotateX(0deg);
             }
 
             100% {
-                top: 140px;
-                transform: rotateX(360deg);
+                transform: translateY(0px) rotateX(0deg);
             }
         }
 
@@ -105,7 +95,7 @@
             }
 
             50% {
-                top: -38px;
+                top: 38px;
             }
         }
 
