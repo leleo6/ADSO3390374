@@ -7,46 +7,81 @@
     <link rel="stylesheet" href="../css/master.css">
     <title>39-challenge-responsive</title>
     <style>
-        body{
-            background: url(imgs/fondo-motos.jpg) !important;
+        body {
+            background: black center !important;
+
         }
-        main{
-            menu{
-                div{
-                    img{
-                        width: 300px;
-                        height: 200px;
-                        display: block;
-                    }
+
+        main {
+
+            section {
+                div.ex-motos.mt-motos {
+                    display: inline-block;
+                    width: 300px;
+                    height: 200px;
+                    vertical-align: top;
+                    margin-right: 10px;
+                    position: relative;
+                }
+
+                div.ex-motos.mt-motos:nth-child(1) {
+                    background-image: url(imgs/mt03.jpg);
+                    background-size: cover;
+                    background-position: -465px 0;
+                }
+
+                div.ex-motos.mt-motos:nth-child(2) {
+                    background-image: url(imgs/mt15.jpg);
+                    background-size: cover;
+                    background-position: -465px -205px;
+                }
+
+                div.ex-motos.mt-motos:nth-child(3) {
+                    background-image: url(imgs/mt10.jpg);
+                    background-size: cover;
+                    background-position: -465px 0;
+                }
+
+                div.ex-motos.mt-motos:nth-child(4) {
+                    background-image: url(imgs/mt125.jpg);
+                    background-size: cover;
+                    background-position: -465px 0;
                 }
             }
-            section{
+
+            section {
+                div.text-moto {}
+
                 background: white;
-                img.moto{
+
+                img.moto {
                     width: 300px;
                     height: auto;
                     display: block;
                 }
-                h4{
+
+                h4 {
                     margin-top: 0;
                     text-align: left;
-                    display: block;
+                    
                     width: 350px;
                     height: 180px;
+                    float: right;
+
                 }
             }
         }
     </style>
 </head>
 
-<body class="css" >
+<body class="css">
     <main>
-        <header >
+        <header>
             <img src="imgs/yamaha.jpg" alt="">
         </header>
-        <menu>
+        <section>
             <div class="ex-motos">
-                <img src="imgs/mt03.jpg" alt="">
+                <div class="mt-motos"></div>
             </div>
             <div class="ex-motos">
                 <img src="imgs/mt15.jpg" alt="">
@@ -57,20 +92,25 @@
             <div class="ex-motos">
                 <img src="imgs/mt125.jpg" alt="">
             </div>
-        </menu>
+        </section>
         <section>
-            <img src="imgs/mt07.jpg" class="moto" >
-            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum dignissimos iure ea debitis velit, animi
-                necessitatibus repudiandae explicabo reiciendis vitae mollitia, voluptas nesciunt iusto aperiam quam
-                autem eligendi quas minus laborum quia odio exercitationem. Cumque fuga autem magni doloremque
-                veritatis, molestiae ut nihil hic, obcaecati exercitationem ex beatae sit dolor.</h4>
+            <img src="imgs/mt07.jpg" class="moto">
+            <div class="text-moto">
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum dignissimos iure ea debitis velit,
+                    animi
+                    necessitatibus repudiandae explicabo reiciendis vitae mollitia, voluptas nesciunt iusto aperiam quam
+                    autem eligendi quas minus laborum quia odio exercitationem. Cumque fuga autem magni doloremque
+                    veritatis, molestiae ut nihil hic, obcaecati exercitationem ex beatae sit dolor.</h4>
+            </div>
         </section>
         <section>
             <img src="imgs/mt09.jpg" class="moto">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vel voluptatem enim recusandae nam
-                ullam iure ipsam illo impedit, officiis eum numquam labore hic voluptas tempore dolore distinctio
-                debitis atque tenetur possimus iusto amet autem. Pariatur laboriosam ex dolores, eius quo a dolore
-                aliquam ad, corrupti laudantium rerum atque iste?</h4>
+            <div class="text-moto">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vel voluptatem enim recusandae nam
+                    ullam iure ipsam illo impedit, officiis eum numquam labore hic voluptas tempore dolore distinctio
+                    debitis atque tenetur possimus iusto amet autem. Pariatur laboriosam ex dolores, eius quo a dolore
+                    aliquam ad, corrupti laudantium rerum atque iste?</h4>
+            </div>
         </section>
     </main>
 </body>
